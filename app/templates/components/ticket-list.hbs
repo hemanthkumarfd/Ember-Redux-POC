@@ -1,0 +1,7 @@
+{{#each tickets as |ticket|}}
+   <li><h2>{{ticket.name}}</h2></li>
+{{/each}}
+<ul class="pagination">
+  <li {{action "clickpage" "1"}} class={{if (eq page '1') 'active' ''}}>{{link-to "1" "index.tickets" (query-params page="1")}}</li>
+  <li {{action "clickpage" "2"}} class={{if (eq page '2') 'active' ''}}>{{link-to "2" "index.tickets" (query-params page="2")}}</li>
+</ul>

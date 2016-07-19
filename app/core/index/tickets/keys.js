@@ -1,0 +1,6 @@
+
+export default {
+  TICKETS_INIT: 'TICKETS_INIT',
+  IN_PROGRESS: 'IN_PROGRESS',
+  INCRIMENT: 'INCRIMENT',
+};

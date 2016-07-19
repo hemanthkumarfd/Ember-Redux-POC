@@ -1,0 +1,8 @@
+{{#if model.isprogress}}
+Loading...
+{{else}}
+{{#ticket-list tickets=model.data page=model.page}}
+{{/ticket-list}}
+{{/if}}
+{{#ticket-count count=model.count}}
+{{/ticket-count}}
